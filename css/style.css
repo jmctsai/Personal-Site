@@ -14,6 +14,33 @@ body, html {
 /*------------------------------------*\
   #CLASS
 \*------------------------------------*/
+
+#navcontainer ul
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+   text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a:hover, a:active {
+  display: inline;
+  color: lightblue;
+  text-decoration: none;
+  }
+
+#navcontainer ul li a:link, a:visited {
+  display: inline;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inlines;
+}
+
+
 .pimg1, .pimg2, .pimg3 {
   position: relative;
   opacity: 0.65;
