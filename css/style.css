@@ -1,7 +1,8 @@
 /*------------------------------------*\
   #BACKGROUND
 \*------------------------------------*/
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-size: 15px;
@@ -15,23 +16,32 @@ body, html {
   #CLASS
 \*------------------------------------*/
 
-#navcontainer ul
-{
+.navbar {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+#navcontainer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-   text-align: center;
+  text-align: center;
 }
 
-#navcontainer ul li { display: inline; }s
-
-#navcontainer ul li a:hover, a:active {
+#navcontainer ul li {
+  display: inline;
+}
+s #navcontainer ul li a:hover,
+a:active {
   display: inline;
   color: lightblue;
   text-decoration: none;
-  }
+}
 
-#navcontainer ul li a:link, a:visited {
+#navcontainer ul li a:link,
+a:visited {
   display: inline;
   color: white;
   padding: 10px 20px;
@@ -39,9 +49,11 @@ body, html {
   text-decoration: none;
 }
 
-.pimg1, .pimg2, .pimg3 {
+.pimg1,
+.pimg2,
+.pimg3 {
   position: relative;
-  opacity: 0.65;
+  opacity: 1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,55 +67,57 @@ body, html {
 }
 
 .pimg2 {
-  background-image: url("../img/yellowknife_teepee.JPG");
+  background-image: url("../img/cameronfall.JPG");
+  min-height: 60%;
+}
+
+.pimg3 {
+  background-image: url("../img/teepee.JPG");
   min-height: 75%;
 }
 
-/* .pimg3 {
-  background-image: url("../img/teapot.jpg");
-  min-height: 50%;
-} */
-
-.section{
+.section {
   text-align: center;
   padding: 50px 80px;
 }
 
-.section-light{
+.section-light {
   background-color: #f4f4f4;
   color: #666;
 }
 
-.section-dark{
+.section-dark {
   background-color: #282e34;
   color: #ddd;
 }
 
-.ptext{
-  position:absolute;
-  top:45%;
-  width:100%;
-  text-align:center;
-  color:#000;
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
+.ptext {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
-.ptext .border{
-  background-color:#111;
-  color:#fff;
-  padding:20px;
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
 }
 
-.ptext .border.trans{
-  background-color:transparent;
+.ptext .border.transparent {
+  background-color: transparent;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media(max-width:525px){
-  .pimg1, .pimg2, .pimg3{
-    background-attachment:scroll;
+@media (max-width: 525px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
   }
 }
 
