@@ -62,17 +62,17 @@ a:visited {
 }
 
 .pimg1 {
-  background-image: url("../img/blossom.jpg");
+  background-image: url("../images/blossom.jpg");
   min-height: 100%;
 }
 
 .pimg2 {
-  background-image: url("../img/cameronfall.JPG");
+  background-image: url("../images/cameronfall.jpg");
   min-height: 60%;
 }
 
 .pimg3 {
-  background-image: url("../img/teepee.JPG");
+  background-image: url("../images/teepee.jpg");
   min-height: 75%;
 }
 
