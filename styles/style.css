@@ -1,65 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
+/*------------------------------------*\
+  #BACKGROUND
+\*------------------------------------*/
+body,
 html {
-  font-family: "Poppins", sans-serif;
-  background-color: lightblue;
+  height: 100%;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #777;
 }
 
-nav {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
+/*------------------------------------*\
+  #CLASS
+\*------------------------------------*/
+
+.navbar {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+#navcontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#navcontainer ul li {
+  display: inline;
+}
+s #navcontainer ul li a:hover,
+a:active {
+  display: inline;
+  color: lightblue;
+  text-decoration: none;
+}
+
+#navcontainer ul li a:link,
+a:visited {
+  display: inline;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Parallax Effect*/
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("../images/blossom.jpg");
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url("../images/cameronfall.jpg");
+  min-height: 60%;
+}
+
+.pimg3 {
+  background-image: url("../images/teepee.jpg");
+  min-height: 75%;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
   text-transform: uppercase;
 }
 
-footer {
-  background: lightgreen;
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  padding: 1em;
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
 }
 
-.logo {
-  font-size: 25px;
-  letter-spacing: 5px;
-  text-decoration: none;
-  color: white;
+.ptext .border.transparent {
+  background-color: transparent;
 }
 
-.navList {
-  display: flex;
-  justify-content: space-around;
-  width: 35%;
+/* Turn off parallax scrolling for tablets and phones */
+@media (max-width: 525px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
 }
 
-.navList li {
-  list-style: none;
-}
-
-.navList a {
-  color: grey;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-h1 {
-  text-align: center;
-  padding: 50px;
-}
-
-section {
-  text-align: center;
-}
+/*------------------------------------*\
+  #ID
+\*------------------------------------*/
