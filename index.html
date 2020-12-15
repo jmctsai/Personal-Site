@@ -7,6 +7,7 @@
 	<title>Johnny Tsai</title>
 	<link rel="icon" href="images/logo/phoenix.png">
 
+	<!-- Bootstrap 5.0 CSS -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
 		rel="stylesheet"
@@ -16,52 +17,131 @@
 </head>
 
 <body>
+
 	<header>
 		<!-- Mobile Nav -->
 		<!-- Desktop Nav -->
-
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Johnny Tsai</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarContent" aria-controls="navbarContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" href="#">About Me</a>
+						<a class="nav-link" href="#">Projects</a>
+						<a class="nav-link" href="#">Hobbies</a>
+					</div>
+				</div>
+			</div>
+		</nav>
 	</header>
+
 	<main id="main">
 		<!-- ------- -->
 		<!-- Landing -->
 		<!-- ------- -->
-		<h1>Johnny Tsai</h1>
-
+		<section id="landing">
+			<div class="container">
+				<h1>Landing</h1>
+			</div>
+		</section>
 		<!-- -------- -->
 		<!-- About Me -->
 		<!-- -------- -->
-		<h2>About Me</h2>
-		<p>
-			Hello! My name's Johnny. Welcome to my website! <br>
-			I'm currently a Computer Engineering student at SFU. I have a passion for
-			technology, gaming and 3D printing.
-		</p>
-		<!-- --------------------- -->
-		<!-- Skills and Experience -->
-		<!-- --------------------- -->
-		<h2>Skills and Experience</h2>
-
+		<section id="about">
+			<div class="container">
+				<h2>About Me</h2>
+				<p>
+					Hello! My name's Johnny. Welcome to my website! <br>
+					I'm currently a Computer Engineering student at SFU. I have a passion
+					for technology, gaming and 3D printing.
+				</p>
+				<h3>Education</h3>
+				<p>BASc, Computer Engineering | Simon Fraser University (SFU) <br>
+					SEPT 2015 – PRESENT
+				</p>
+			</div>
+		</section>
+		<!-- ------ -->
+		<!-- Résumé -->
+		<!-- ------ -->
+		<section id="resume">
+			<div class="container">
+				<h2>Skills and Experience</h2>
+				<h3>Skills</h3>
+				<h4>Transferable Skills</h4>
+				<ul>
+					<li>Communication</li>
+					<li>Time Management</li>
+					<li>Adaptable</li>
+					<li>Self-motivated</li>
+					<li>Problem Solver</li>
+				</ul>
+				<h4>Software:</h4>
+				<ul>
+					<li>C, C++, Python, Swift</li>
+					<li>HTML, CSS, Bootstrap, JQuery, Node.js, Express.js</li>
+					<li>VSCode, Eclipse</li>
+					<li>Word, Excel, Powerpoint, Visio</li>
+					<li>Git, Docker, Proxmox, Matlab, Quartus, VHDL, Cadence Virtuoso</li>
+				</ul>
+				<h4>Hardware:</h4>
+				<ul>
+					<li>PC Assembly and Maintenance</li>
+					<li>3D Printing</li>
+					<li>Soldering, Breadboarding, Circuits</li>
+					<li>Oscilloscope, Multimeter, Function Generator, DC Power Supply</li>
+				</ul>
+				<h3>Experience</h3>
+				<p>Desktop Support Technician | ResponseTek</p>
+				<p>IT Intern | York House School</p>
+			</div>
+		</section>
 
 		<!-- -------- -->
-		<!-- Projects -->
+		<!-- Projects (MAYBE MOVE TO ANOTHER PAGE)-->
 		<!-- -------- -->
-
+		<section id="projects">
+			<div class="container">
+				<h2>Projects</h2>
+				<h4>Doodlio</h4>
+				<h4>Shell with History</h4>
+				<h4>Linux System Call and Kernal Driver</h4>
+				<h4>IOS App for Children with Autism</h4>
+			</div>
+		</section>
 
 		<!-- ------- -->
-		<!-- Hobbies -->
+		<!-- Hobbies (MAYBE MOVE TO ANOTHER PAGE)-->
 		<!-- ------- -->
+		<section id="hobbies">
+			<div class="container">
+				<h2>Hobbies</h2>
+				<ul>
+					<li>3D Printing</li>
+					<li>PC Building</li>
+					<li>Home Server</li>
+				</ul>
+			</div>
+		</section>
 
 	</main>
+
 	<footer>
 		<div class="container">
 			<!-- footer nav -->
 			<div class="logo-group">
-				<!-- Name/Logo Here -->
+				Name/Logo Here
 			</div>
 			<div class="list-group">
 				<ul>Home</ul>
 				<ul>About Me
-					<li>Resume</li>
+					<li>Résumé</li>
 				</ul>
 				<ul>Social
 					<li>LinkedIn</li>
@@ -71,6 +151,12 @@
 			</div>
 		</div>
 	</footer>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+
 </body>
 
 </html>
