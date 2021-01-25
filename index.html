@@ -1,162 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Johnny Tsai</title>
+		<link rel="icon" href="images/logo/phoenix.png" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Johnny Tsai</title>
-	<link rel="icon" href="images/logo/phoenix.png">
+		<!-- Bootstrap 5.0 CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	</head>
 
-	<!-- Bootstrap 5.0 CSS -->
-	<link
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-		rel="stylesheet"
-		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-		crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
-
-<body>
-
-	<header>
-		<!-- Mobile Nav -->
-		<!-- Desktop Nav -->
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Johnny Tsai</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarContent" aria-controls="navbarContent"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarContent">
-					<div class="navbar-nav">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-						<a class="nav-link" href="#">About Me</a>
-						<a class="nav-link" href="#">Projects</a>
-						<a class="nav-link" href="#">Hobbies</a>
+	<body>
+		<header>
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-4">
+						<img
+							src="/images/Johnny.png"
+							alt="Johnny Tsai"
+							class="img-thumbnail rounded-circle"
+							width="150"
+						/>
+					</div>
+					<div class="col-md-8 pt-3 my-auto">
+						<h1>Johnny Tsai</h1>
+						<p>
+							Computer Engineering student at Simon Fraser
+							University
+						</p>
+						<ul class="text-uppercase">
+							<li>
+								<a
+									href="https://www.linkedin.com/in/jmctsai/"
+									target="_blank"
+									>LinkedIn</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://github.com/jmctsai"
+									target="_blank"
+									>GitHub</a
+								>
+							</li>
+							<li>
+								<a href="/Resume.pdf" target="_blank">Résumé</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</nav>
-	</header>
+		</header>
 
-	<main id="main">
-		<!-- ------- -->
-		<!-- Landing -->
-		<!-- ------- -->
-		<section id="landing">
-			<div class="container">
-				<h1>Landing</h1>
+		<main id="main">
+			<section id="about">
+				<div class="container pt-3">
+					<div class="row">
+						<div class="col-md-4 text-uppercase">
+							<h3>About Me</h3>
+						</div>
+						<div class="col-md-8">
+							<p>
+								I'm a motivated student with passion for
+								technology, home labbing, gaming, and 3D
+								printing.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects">
+				<div class="container pt-3">
+					<div class="row">
+						<div class="col-md-4 text-uppercase">
+							<h3>Projects</h3>
+						</div>
+						<div class="col-md-8">
+							<h6 class="mb-2">Personal Website</h6>
+							<p>Static website made with HTML, CSS, Bootstrap</p>
+							<h6 class="mb-2">
+								Doodlio | Multiplayer Drawing and Guessing Game
+							</h6>
+							<p>
+								A twist to the classic Scribbl.io but with ink
+								levels difficulty also includes chatroom
+								features using socket.io
+							</p>
+							<h6 class="mb-2">Home Server</h6>
+							<p>
+								Proxmox running on bare metal, running automated
+								media browser and download along with Plex for
+								media consumption. In addition to Nginx for
+								reverse proxy into home service using purchased
+								domain with SSL
+							</p>
+							<h6 class="mb-2">3D Printer</h6>
+							<p>
+								Ender-3 Pro with modified firmware to support
+								BLTouch, SKR mini E3 v1.2 mainboard and dual
+								5015 extruder fan
+							</p>
+							<h6 class="mb-2">Shell with History</h6>
+							<p>
+								Worked with parent and child processes to read
+								and execute user commands and history feature
+								similar to linux terminal
+							</p>
+							<h6 class="mb-2">Linux System Call and Kernal</h6>
+							<p>
+								Simple Linux system call using C for
+								communication between user space and kernel
+							</p>
+							<h6 class="mb-2">
+								Driver IOS App for Children with Autism
+							</h6>
+							<p>
+								Game app developed using Swift in a team to help
+								children with autism
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="skills">
+				<div class="container pt-3">
+					<div class="row">
+						<div class="col-md-4 text-uppercase">
+							<h3>Skills</h3>
+						</div>
+						<div class="col-md-8">
+							<h6 class="mb-2">Soft Skills</h6>
+							<p>
+								Attention to Detail <br />
+								Problem Solver <br />
+								Communication <br />
+								Adaptable
+							</p>
+
+							<h6 class="mb-2">Software</h6>
+							<p>
+								C, C++, Python, Swift <br />
+								Visual Studio, Eclipse <br />
+								Word, Excel, PowerPoint, Visio <br />
+								Git, AD, JIRA, Quartus, VHDL, Cadence Virtuoso
+							</p>
+
+							<h6 class="mb-2">Hardware</h6>
+							<p>
+								PC Assembly and Maintenance <br />
+								3D Printing <br />
+								Soldering, Breadboarding, Circuits <br />
+								Oscilloscope, Digital Multimeter, Function
+								Generator, DC Power Supply
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="experience">
+				<div class="container pt-3">
+					<div class="row">
+						<div class="col-md-4 text-uppercase">
+							<h3>Experience</h3>
+						</div>
+						<div class="col-md-8">
+							<h6 class="mb-2">
+								ResponseTek | Desktop Support Technician
+							</h6>
+							<p>Jan 2018 - Aug 2018</p>
+							<h6 class="mb-2">York House School | IT Intern</h6>
+							<p>Apr 2019 - Feb 2020</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container pt-5">
+				<!-- footer nav -->
 			</div>
-		</section>
-		<!-- -------- -->
-		<!-- About Me -->
-		<!-- -------- -->
-		<section id="about">
-			<div class="container">
-				<h2>About Me</h2>
-				<p>
-					Hello! My name's Johnny. Welcome to my website! <br>
-					I'm currently a Computer Engineering student at SFU. I have a passion
-					for technology, gaming and 3D printing.
-				</p>
-				<h3>Education</h3>
-				<p>BASc, Computer Engineering | Simon Fraser University (SFU) <br>
-					SEPT 2015 – PRESENT
-				</p>
-			</div>
-		</section>
-		<!-- ------ -->
-		<!-- Résumé -->
-		<!-- ------ -->
-		<section id="resume">
-			<div class="container">
-				<h2>Skills and Experience</h2>
-				<h3>Skills</h3>
-				<h4>Transferable Skills</h4>
-				<ul>
-					<li>Communication</li>
-					<li>Time Management</li>
-					<li>Adaptable</li>
-					<li>Self-motivated</li>
-					<li>Problem Solver</li>
-				</ul>
-				<h4>Software:</h4>
-				<ul>
-					<li>C, C++, Python, Swift</li>
-					<li>HTML, CSS, Bootstrap, JQuery, Node.js, Express.js</li>
-					<li>VSCode, Eclipse</li>
-					<li>Word, Excel, Powerpoint, Visio</li>
-					<li>Git, Docker, Proxmox, Matlab, Quartus, VHDL, Cadence Virtuoso</li>
-				</ul>
-				<h4>Hardware:</h4>
-				<ul>
-					<li>PC Assembly and Maintenance</li>
-					<li>3D Printing</li>
-					<li>Soldering, Breadboarding, Circuits</li>
-					<li>Oscilloscope, Multimeter, Function Generator, DC Power Supply</li>
-				</ul>
-				<h3>Experience</h3>
-				<p>Desktop Support Technician | ResponseTek</p>
-				<p>IT Intern | York House School</p>
-			</div>
-		</section>
+		</footer>
 
-		<!-- -------- -->
-		<!-- Projects (MAYBE MOVE TO ANOTHER PAGE)-->
-		<!-- -------- -->
-		<section id="projects">
-			<div class="container">
-				<h2>Projects</h2>
-				<h4>Doodlio</h4>
-				<h4>Shell with History</h4>
-				<h4>Linux System Call and Kernal Driver</h4>
-				<h4>IOS App for Children with Autism</h4>
-			</div>
-		</section>
-
-		<!-- ------- -->
-		<!-- Hobbies (MAYBE MOVE TO ANOTHER PAGE)-->
-		<!-- ------- -->
-		<section id="hobbies">
-			<div class="container">
-				<h2>Hobbies</h2>
-				<ul>
-					<li>3D Printing</li>
-					<li>PC Building</li>
-					<li>Home Server</li>
-				</ul>
-			</div>
-		</section>
-
-	</main>
-
-	<footer>
-		<div class="container">
-			<!-- footer nav -->
-			<div class="logo-group">
-				Name/Logo Here
-			</div>
-			<div class="list-group">
-				<ul>Home</ul>
-				<ul>About Me
-					<li>Résumé</li>
-				</ul>
-				<ul>Social
-					<li>LinkedIn</li>
-					<li>GitHub</li>
-				</ul>
-				<ul>Contact</ul>
-			</div>
-		</div>
-	</footer>
-
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-		crossorigin="anonymous"></script>
-
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

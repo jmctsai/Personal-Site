@@ -1,23 +1,36 @@
-#landing {
-  background-color: aliceblue;
+* {
+	background: #d8dee9;
+	color: #4c566a;
 }
 
-#about {
-  background-color: seashell;
+h1 {
+	color: black;
+	font-weight: bold;
 }
 
-#resume {
-  background-color: peachpuff;
+h6 {
+	color: #2e3440;
+	font-weight: 600;
 }
 
-#projects {
-  background-color: plum;
+ul {
+	padding: 0;
 }
 
-#hobbies {
-  background-color: powderblue;
+ul li {
+	float: left;
+	display: inline-block;
+	padding-right: 1em;
 }
 
-footer {
-  background-color: lightseagreen;
+a:hover,
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+	color: #4c566a;
+}
+
+a:hover {
+	color: #81a1c1;
 }
